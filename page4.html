@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIU Course Registration</title>
+    <link rel="stylesheet" href="page4.css">
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <nav class="topnav">
+        <div class="topnav-left">
+            <a href="#">Dashboard</a>
+            <a href="#">Courses</a>
+            <a href="#">Notices</a>
+            <a href="#">Results</a>
+        </div>
+        <div class="topnav-right">
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+
+        <!-- Left Panel: Semesters + Notice -->
+        <aside class="left-panel">
+
+            <h2>Semesters</h2>
+
+            <div class="semester-list">
+                <div class="semester-item active-semester">Spring 2025</div>
+                <div class="semester-item">Fall 2024</div>
+                <div class="semester-item">Summer 2024</div>
+            </div>
+
+            <div class="notice-box">
+                <h4>Important Notice</h4>
+                <p>Midterm exams will begin on April 10, 2025. Students must bring their ID cards and check the schedule posted on the portal.</p>
+                <a href="#" class="btn-notice">View Details</a>
+            </div>
+
+        </aside>
+
+        <!-- Right Panel: Course Table + Sign Up Form -->
+        <section class="right-panel">
+
+            <!-- Course Registration Table -->
+            <h2>Course Registration</h2>
+            <table class="course-table">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Code</th>
+                        <th>Credit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Programming</td>
+                        <td>CSE201</td>
+                        <td>3.0</td>
+                    </tr>
+                    <tr class="alt-row">
+                        <td>Data Structures</td>
+                        <td>CSE202</td>
+                        <td>3.0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Sign Up Form -->
+            <h2 class="form-title">Sign Up Form</h2>
+
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" placeholder="Enter full name">
+            </div>
+
+            <div class="form-group">
+                <label for="studentid">Student ID</label>
+                <input type="text" id="studentid" placeholder="e.g., 011233001">
+            </div>
+
+            <div class="form-group">
+                <label for="email">UIU Email</label>
+                <input type="email" id="email" placeholder="name@students.uiu.ac.bd">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+
+            <button class="btn-register">Register</button>
+
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2025 United International University | Web Programming Midterm Makeup
+    </footer>
+
+</body>
+</html>

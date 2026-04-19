@@ -1,0 +1,250 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #3a3adb;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #3a3adb;
+}
+
+/* ===== MAIN CARD ===== */
+.main-card {
+    display: flex;
+    margin: 30px auto;
+    max-width: 950px;
+    background-color: #eceff4;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* ===== LEFT SIDE ===== */
+.left-side {
+    flex: 1;
+    padding: 50px 45px;
+    background-color: #eff6fe;
+}
+
+.left-side h1 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #1a1aaa;
+    line-height: 1.3;
+    margin-bottom: 16px;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+/* Feature List */
+.feature-list {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #50ad50;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+.feature-link {
+    text-decoration: none;
+    color: #71adec;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.feature-link:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn-group {
+    display: flex;
+    gap: 14px;
+}
+
+.btn-learn {
+    background-color: #50ad50;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn-learn:hover {
+    background-color: #3d9a3d;
+}
+
+.btn-watch {
+    background-color: #fff;
+    color: #333;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid #3f46a4;
+}
+
+.btn-watch:hover {
+    background-color: #f0f0ff;
+}
+
+/* ===== RIGHT SIDE ===== */
+.right-side {
+    width: 380px;
+    padding: 50px 40px;
+    background-color: #fefefe;
+    border-left: 1px solid #dde3ec;
+}
+
+.form-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #3f46a4;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    background-color: #fefefe;
+    color: #555;
+}
+
+.form-group input:focus {
+    border-color: #3f46a4;
+}
+
+/* Checkbox */
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #555;
+}
+
+.checkbox-row input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.link-green {
+    color: #50ad50;
+    text-decoration: none;
+}
+
+.link-green:hover {
+    text-decoration: underline;
+}
+
+/* Create Account Button */
+.btn-create {
+    width: 100%;
+    padding: 13px;
+    background-color: #6fb570;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.btn-create:hover {
+    background-color: #5aa05a;
+}
+
+/* Login Text */
+.login-text {
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+}
+
+/* Background color override for create account button to match #FEFEFE area */
+.right-side {
+    background-color: #fefefe;
+}

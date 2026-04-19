@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 4165 Web Programming - Sign In</title>
+    <link rel="stylesheet" href="page6.css">
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">&#129409;</span>
+            <span class="logo-text">CSE 4165 Web Programming</span>
+        </div>
+        <div class="nav-links">
+            <a href="#">Blog</a>
+            <a href="#">Docs</a>
+            <a href="#">Pricing</a>
+            <a href="#">Log In</a>
+            <a href="#" class="btn-trial">Start Free Trial</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-layout">
+
+        <!-- Left: Quote Panel -->
+        <div class="left-panel">
+            <blockquote>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </blockquote>
+
+            <div class="profile">
+                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Professor Photo" class="profile-img">
+                <div class="profile-info">
+                    <strong>Niassoh Dihan</strong>
+                    <span>Assistant Professor &amp; Program Coordinator, CSE</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Sign In Form -->
+        <div class="right-panel">
+            <h2>Sign in to your WEB<br>PROGRAMMING account.</h2>
+            <p class="sub-text">Don't have an account? <a href="#" class="link-red">Create one.</a></p>
+
+            <!-- Social Login Buttons -->
+            <button class="btn-social btn-google">
+                <span class="social-icon">G</span> Sign in with Google
+            </button>
+
+            <div class="social-row">
+                <button class="btn-social btn-apple">
+                    &#63743; Continue with Apple
+                </button>
+                <button class="btn-social btn-facebook">
+                    &#9409; Continue with Facebook
+                </button>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider">
+                <hr><span>OR</span><hr>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+                <input type="email" placeholder="Enter your email address" class="input-field">
+            </div>
+
+            <!-- Forgot Password -->
+            <div class="forgot-row">
+                <a href="#" class="link-red">Forgot your password?</a>
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group password-group">
+                <input type="password" placeholder="Enter your password" class="input-field" id="passwordInput">
+                <span class="show-btn" onclick="togglePassword()">Show</span>
+            </div>
+
+            <!-- Sign In Button -->
+            <button class="btn-signin">SIGN IN</button>
+
+            <!-- Help Links -->
+            <p class="help-text">Need help? Check out our <a href="#" class="link-red">FAQs</a>.</p>
+            <p class="help-text">Visit nahid.org <a href="#" class="link-red">Connect your social account.</a></p>
+            <p class="fine-print">
+                You can unsubscribe from emails at any time. By signing up you are agreeing to our
+                <a href="#" class="link-red">Terms of Use</a> and <a href="#" class="link-red">Privacy Policy</a>.
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        function togglePassword() {
+            var input = document.getElementById("passwordInput");
+            if (input.type === "password") {
+                input.type = "text";
+            } else {
+                input.type = "password";
+            }
+        }
+    </script>
+
+</body>
+</html>

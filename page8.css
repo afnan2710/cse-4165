@@ -1,0 +1,298 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ebebeb;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 35px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-brand {
+    font-size: 22px;
+    font-weight: 800;
+    color: #222;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links a.active {
+    color: #c1cdff;
+    font-weight: 700;
+}
+
+.nav-links a:hover {
+    color: #536ffe;
+}
+
+/* User Info */
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.user-name {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+}
+
+.user-role {
+    display: block;
+    font-size: 12px;
+    color: #888;
+}
+
+.user-avatar {
+    width: 42px;
+    height: 42px;
+    background-color: #536ffe;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* ===== MAIN CONTENT ===== */
+.content {
+    padding: 30px 35px;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+    background-color: #ebebeb;
+    margin-bottom: 20px;
+}
+
+.welcome-banner h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.welcome-banner p {
+    font-size: 13px;
+    color: #777;
+}
+
+/* ===== STATS ROW ===== */
+.stats-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 30px;
+    align-items: stretch;
+}
+
+.stat-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 22px 22px;
+    flex: 1;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+/* Profile Card */
+.profile-card {
+    flex: 2;
+}
+
+.profile-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    background-color: #536ffe;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.profile-info strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+}
+
+.profile-info span {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Progress in Profile Card */
+.progress-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #aaa;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.progress-percent {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.progress-bar {
+    background-color: #e8e8e8;
+    border-radius: 5px;
+    height: 8px;
+    width: 100%;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.blue-fill {
+    background-color: #536ffe;
+}
+
+.red-fill {
+    background-color: #f93536;
+}
+
+/* Stat Number Cards */
+.stat-label {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.stat-big {
+    font-size: 30px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+.stat-sub {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 20px;
+}
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+/* ===== PROJECTS ROW ===== */
+.projects-row {
+    display: flex;
+    gap: 16px;
+}
+
+.project-card {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 22px 20px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+.project-card h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.badge-blue {
+    background-color: #c1cdff;
+    color: #2a2aaa;
+}
+
+.badge-green {
+    background-color: #9efe1e;
+    color: #2a6a00;
+}
+
+.badge-yellow {
+    background-color: #febd57;
+    color: #7a4800;
+}
+
+.project-desc {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 14px;
+}
+
+.proj-percent {
+    font-size: 12px;
+    color: #888;
+    margin-top: 6px;
+}
+
+/* Project Progress Colors */
+.proj-blue {
+    background-color: #536ffe;
+}
+
+.proj-green {
+    background-color: #9efe1e;
+}
+
+.proj-yellow {
+    background-color: #febd57;
+}
