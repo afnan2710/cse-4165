@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: rgb(9, 2, 56);
+}
+.navlinks a{
+    padding: 7px 7px;
+    text-decoration: none;
+    color: white;
+}
+.navbar h2{
+    color: orange;
+}
+.hero{
+    background-color: rgb(33, 33, 108);
+    padding: 20px 20px;
+}
+.title{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.desc{
+    text-align: center;
+    color: white;
+}
+.hero input{
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+    align-content: center;
+}
+.searchbar{
+    width: 550px;
+    margin-left: 400px;
+}
+.bread{
+    margin-top: 20px;
+    text-align: center;
+}
+.bread a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+.active{
+    background-color: orange;
+    color: black;
+    border: none;
+}
+.other{
+    border: 1px solid black;
+}
+.products{
+    display: flex;
+    padding: auto;
+    justify-content: center;
+    margin-top: 30px;
+}
+.card{
+    border-radius: 10px;
+    background-color: rgb(203, 209, 209);
+    padding: 20px 20px;
+    margin-right: 10px;
+}
+.image{
+    height: 100px;
+    background-color: rgb(73, 45, 45);
+    margin-bottom: 5px;
+}
+.badge{
+    border-radius: 10px;
+    padding: 5px 5px;
+    color: green;
+    font-size: 10px;
+    background-color: rgb(155, 162, 160);
+    width: 20px;
+    margin-bottom: 5px;
+}
+.pricecart{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.addtocartbtn{
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 8px 8px;
+    font-size: 14px;
+}
+.price{
+    color: orange;
+    font-size: 20px;
+}
+.desc{
+    color: rgb(101, 99, 99);
+}
+.flashsale{
+    margin-top: 20px;
+    background-color: rgb(172, 130, 52);
+    text-align: center;
+    padding: 10px 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 10px;
+    height: 85px;
+}
+.flashsale a{
+    text-decoration: none;
+    border: 1px solid;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.flashsale p{
+    margin-bottom: 15px;
+}
+footer{
+    background-color: rgb(9, 2, 56);
+    padding: 10px 10px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}

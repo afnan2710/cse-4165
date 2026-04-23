@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: blue;
+}
+.navlinks a{
+    padding: 7px 7px;
+    text-decoration: none;
+    color: white;
+}
+.navbar h2{
+    color: white;
+}
+.studentinfo{
+    background-color: white;
+    padding: 20px 20px;
+}
+.studentinfo, .rightside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dp{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    align-content: center;
+    text-align: center;
+    margin-right: 10px;
+    color: white;
+}
+.studentinfo{
+    border-bottom: 1px solid rgb(216, 185, 185);
+    height: 60px;
+}
+.stat{
+    display: flex;
+    padding: 20px 20px;
+    background-color: #f0f4ff;
+    align-content: center;
+    justify-content: center;
+    gap: 16px;
+}
+.statcard{
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 10px 10px;
+    align-items: center;
+    border: 1px solid rgb(216, 185, 185);
+    height: 80px;
+    width: 120px;
+    text-align: center;
+    align-content: center;
+    background-color: white;
+}
+.statcard h4{
+    font-size: 24px;
+    color: blue;
+}
+.middle{
+    display: flex;
+    gap: 16px;
+    padding: 16px 20px;
+    background-color: #f0f4ff;
+}
+.box{
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    padding: 14px 16px;
+    border: 1px solid rgb(216, 185, 185);
+}
+.box h3{
+    font-size: 13px;
+    color: blue;
+    border-bottom: 1.5px solid #e5e7eb;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+.course{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.course span{
+    width: 130px;
+    flex-shrink: 0;
+}
+.bar{
+    flex: 1;
+    background-color: #e5e7eb;
+    border-radius: 10px;
+    height: 7px;
+    margin: 0 8px;
+}
+.fill{
+    height: 7px;
+    border-radius: 10px;
+    background-color: blue;
+}
+.pct{
+    width: 32px;
+    text-align: right;
+    font-size: 11px;
+    color: blue;
+    font-weight: bold;
+}
+.task{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.urgent{ background-color: #ef4444; }
+.normal{ background-color: #3b82f6; }
+.done{   background-color: #22c55e; }
+.due{
+    margin-left: auto;
+    font-size: 10px;
+    color: #aaa;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+th{
+    background-color: blue;
+    color: white;
+    padding: 7px 10px;
+    text-align: left;
+    font-weight: 600;
+}
+td{
+    padding: 7px 10px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #444;
+}
+.grade{
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+}
+.ga{ background-color: #d1fae5; color: #065f46; }
+.gb{ background-color: #dbeafe; color: #1e40af; }
+.gc{ background-color: #fef9c3; color: #78350f; }
+.notice{
+    border-left: 3px solid #f59e0b;
+    background-color: #fffbeb;
+    padding: 8px 10px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 8px;
+}
+.notice strong{
+    font-size: 12px;
+    color: #78350f;
+    display: block;
+    margin-bottom: 3px;
+}
+.notice p{
+    font-size: 11px;
+    color: #92400e;
+}
+footer{
+    background-color: blue;
+    color: #bcd;
+    text-align: center;
+    padding: 12px;
+    font-size: 11px;
+}

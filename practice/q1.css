@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: rgb(9, 2, 56);
+}
+.navlinks a{
+    padding: 7px 7px;
+    text-decoration: none;
+    color: white;
+}
+.navbar h2{
+    color: aqua;
+}
+.hero{
+    background-color: rgb(9, 2, 56);    
+    padding: 30px 60px;
+    text-align: center;
+    justify-items: center;
+}
+.dp{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: blue;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+.name{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.desc{
+    color: white;
+    margin-bottom: 20px;
+}
+.hero a{
+    border-radius: 18px;
+    background-color: blue;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.heading{
+    display: flex;
+}
+.divider{
+    height: 20px;
+    width: 6px;
+    background-color: rgb(9, 2, 56);
+    margin-right: 5px;
+}
+.about, .skills, .projects, .contact{
+    padding: 30px 30px;
+}
+.about p{
+    margin-top: 10px;
+}
+.bar{
+    height: 10px;
+    width: 500px;
+    background-color: aqua;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.blue{
+    height: 10px;
+    width: 70px;
+    background-color: blue;
+    border-radius: 20px;
+}
+.skills h4{
+    margin-top: 10px;
+}
+.allproject{
+    display: flex;
+    margin-top: 10px;
+}
+.projectdiv{
+    border-radius: 10px;
+    width: 300px;
+    background-color: rgb(168, 166, 166);
+    margin-right: 20px;
+    padding: 20px 20px;
+}
+.projtitle{
+    color: black;
+    font-weight: bold;
+}
+.projdesc{
+    color: rgb(98, 98, 98);
+    font-size: 14px;
+}
+.projectbadge{
+    margin-top: 5px;
+    border-radius: 18px;
+    background-color: aqua;
+    width: 80px;
+    text-align: center;
+    padding: 2px 7px;
+    font-size: 12px;
+}
+.contactform input, textarea{
+    width: 70%;
+    padding: 11px 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    outline: none;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+.msgbtn{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 7px 7px;
+}
+footer{
+    background-color: rgb(9, 2, 56);
+    color: white;
+    padding: 7px 7px;
+    text-align: center;
+    font-size: 12px;
+}
