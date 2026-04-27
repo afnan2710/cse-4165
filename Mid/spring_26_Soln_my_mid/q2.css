@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.navlinks a{
+    text-decoration: none;
+    padding: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+.navlinks button{
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #205bcb;
+    color: white;
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f7fb;
+}
+.left{
+    width: 25%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.left h2{
+    margin-bottom: 15px;
+}
+
+.left h3{
+    margin: 15px 0 10px;
+}
+
+.left label{
+    margin-left: 5px;
+    color: #555;
+}
+
+.left a{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #205bcb;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+.right{
+    width: 75%;
+}
+
+.right1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.jobs{
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    transition: 0.2s;
+}
+.jobs h2{
+    margin-bottom: 5px;
+}
+
+.jobs h4{
+    margin-bottom: 10px;
+    color: #666;
+}
+.badge{
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 8px;
+    background-color: #e6ecff;
+    color: #205bcb;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.salary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.salary h1{
+    font-size: 18px;
+    color: #222;
+}
+
+.salary h4{
+    font-size: 13px;
+    color: #888;
+}
+
+.salary a{
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: #205bcb;
+    color: white;
+    padding: 8px 15px;
+}

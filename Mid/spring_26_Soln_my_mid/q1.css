@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #6c757d;
+}
+
+.navlinks a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar h2,
+.navbar h4 {
+    color: white;
+}
+.stat {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #1975d1;
+    color: white;
+    width: 220px;
+    transition: transform 0.2s;
+}
+
+
+.card h4 {
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+    color: black;
+    margin-top: 10px;
+}
+
+.card h1 {
+    margin-bottom: 5px;
+}
+.lower {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.config {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.leftform {
+    display: flex;
+    gap: 10px;
+}
+
+.leftform input,
+.leftform select {
+    flex: 1;
+}
+
+.form input,
+.form select,
+textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+.permission {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.c1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px 0;
+}
+.btn {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    background-color: #1a237e;
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.flex{
+    display: flex;
+    gap: 20px;
+}
