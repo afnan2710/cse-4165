@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Guessing Game</title>
+</head>
+<body>
+    <h2>Guess the Secret Number (500 - 5000)</h2>
+    <input type="text" id="guessInput" placeholder="Enter your guess">
+    <button onclick="checkGuess()">Submit</button>
+    <p id="feedback"></p>
+
+    <script>
+        var secretNumber = Math.floor(Math.random() * (5000 - 500 + 1)) + 500;
+        var attempts = 0;
+        var maxAttempts = 5;
+
+        function checkGuess() {
+            var userGuess = document.getElementById("guessInput").value;
+            userGuess = parseInt(userGuess);
+            attempts++;
+
+            if (userGuess > secretNumber) {
+                document.getElementById("feedback").innerHTML += "Too high! <br>";
+            }
+            else if (userGuess < secretNumber) {
+                document.getElementById("feedback").innerHTML += "Too low! <br>";
+            }
+            else {
+                document.getElementById("feedback").innerHTML += "Correct! <br>";
+                document.getElementById("guessInput").disabled = true;
+                return;
+            }
+
+            if (attempts >= maxAttempts) {
+                document.getElementById("feedback").innerHTML += "Out of guesses! <br>";
+                document.getElementById("guessInput").disabled = true;
+            }
+            document.getElementById("guessInput").value = "";
+        }
+    </script>
+</body>
+</html>

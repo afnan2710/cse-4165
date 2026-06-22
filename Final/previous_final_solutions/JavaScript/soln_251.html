@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Strength Checker</title>
+</head>
+<body>
+    <h2>Password Strength Checker</h2>
+    <input type="password" id="passwordInput" placeholder="Enter password">
+    <button onclick="checkStrength()">Check</button>
+    <p id="result"></p>
+    <script>
+        var attempts = 0;
+        function checkStrength() {
+            var password = document.getElementById("passwordInput").value;
+            var score = 0;
+            attempts++;
+
+            if (password.length >= 6) {
+                score += Math.floor(password.length / 2) * 10;
+            }
+            var hasUpper = false;
+            var hasLower = false;
+            var hasNumber = false;
+            var hasSpecial = false;
+            for (var i = 0; i < password.length; i++) {
+                var ch = password[i];
+                if (ch >= 'A' && ch <= 'Z') {
+                    hasUpper = true;
+                }
+                else if (ch >= 'a' && ch <= 'z') {
+                    hasLower = true;
+                }
+                else if (ch >= '0' && ch <= '9') {
+                    hasNumber = true;
+                }
+                else if ("!@#$%^&*".includes(ch)) {
+                    hasSpecial = true;
+                }
+            }
+            if (hasUpper) score += 15;
+            if (hasLower) score += 15;
+            if (hasNumber) score += 20;
+            if (hasSpecial) score += 25;
+
+            var strength = "";
+            if (score <= 30) {
+                strength = "Very Weak";
+            } else if (score <= 50) {
+                strength = "Weak";
+            } else if (score <= 70) {
+                strength = "Medium";
+            } else if (score <= 90) {
+                strength = "Strong";
+            } else {
+                strength = "Very Strong";
+            }
+            if (score >= 100) {
+                document.getElementById("result").innerHTML = "Perfect Password!";
+                return;
+            }
+            if (attempts > 8 && strength !== "Strong" && strength !== "Very Strong") {
+                document.getElementById("result").innerHTML = "Need practice! Use uppercase, numbers & symbols.";
+                return;
+            }
+            document.getElementById("result").innerHTML = strength;
+        }
+    </script>
+</body>
+</html>
